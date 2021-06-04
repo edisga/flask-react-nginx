@@ -12,7 +12,7 @@ function App() {
 
   useEffect(() => {
     setAppState({ loading: true });
-    const apiUrl = `http://localhost:5000/api/products`;
+    const apiUrl = `http://0.0.0.0/api/products`;
     fetch(apiUrl)
       .then((res) => res.json())
       .then((products) => {
