@@ -4,8 +4,8 @@ After=network.target
 
 [Service]
 User=edisga
-WorkingDirectory=/home/edisga/flask-react-nginx/api
-ExecStart=/home/edisga/flask-react-nginx/api/env/bin/gunicorn -b 127.0.0.1:5000 app:app
+WorkingDirectory=/home/edisga/codes/api
+ExecStart=/home/edisga/codes/api/env/bin/gunicorn --workers 3 -b localhost:5000 app:app
 Restart=always
 
 [Install]
