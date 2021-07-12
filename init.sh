@@ -19,4 +19,6 @@ npm install
 npm run build
 
 cd ~/codes
-sudo cp flaskapi.service /etc/systemd/service/
+sudo cp flaskapi.service /etc/systemd/system
+service flaskapi start
+service flaskapi status
