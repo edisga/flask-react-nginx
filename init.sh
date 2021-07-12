@@ -17,4 +17,6 @@ cd ~/codes
 cd frontend/
 npm install
 npm run build
+
+cd ~/codes
 sudo cp flaskapi.service /etc/systemd/service/
