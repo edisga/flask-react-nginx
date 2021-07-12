@@ -1,6 +1,7 @@
 #!/bin/bash
 sudo apt update
 sudo apt install -y software-properties-common curl
+sudo apt install -y nginx
 sudo add-apt-repository -y ppa:deadsnakes/ppa
 sudo apt update
 sudo apt install -y python3.9
