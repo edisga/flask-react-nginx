@@ -28,7 +28,7 @@ products = [
     },
 ]
 
-@app.route('/api/products', methods=['GET'])
+@app.route('/products', methods=['GET'])
 def get_products():
     return jsonify(products)
 
